@@ -99,34 +99,31 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"{        \r",
-							"    \"id\": 5\r",
-							"}\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
+			"name": "Delete",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{        \r\n    \"id\": 5\r\n}\r\n",
+					"raw": "\r\n{        \r\n    \"id\": 5\r\n}\r\n\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "https://reqres.in/api/users"
+				"url": {
+					"raw": "https://reqres.in/api/users",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
 			},
 			"response": []
 		},
